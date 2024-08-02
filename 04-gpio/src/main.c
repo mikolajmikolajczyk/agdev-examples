@@ -4,7 +4,7 @@
 void delay_some()
 {
     uint32_t count = 7;
-    uint32_t cycles_per_count = 18000; // 18,000,000 cycles per second / 1,000 milliseconds
+    uint32_t cycles_per_count = 18000;
     uint32_t iterations_per_count = cycles_per_count / 4;
 
     while (count--)
