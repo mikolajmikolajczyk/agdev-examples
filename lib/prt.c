@@ -23,7 +23,6 @@ void prt_set_enable(uint8_t timer_ctl_addr, bool enable)
     uint8_t settings = port_recv(timer_ctl_addr);
     settings &= 0xFC;         // Clear PRT_EN bit and RST_EN bit
     settings |= (enable | 2); // Set RST_EN bit always and PRT_EN bit if enable is true
-    printf("Settings: 0x%02X\n", settings);
     port_send(timer_ctl_addr, settings);
 }
 uint16_t prt_current_reload_value(uint8_t timer_ctl_addr)
