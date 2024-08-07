@@ -17,6 +17,12 @@ LDHAS_EXIT_HANDLER:=0
 
 SEND_AGON_SCRIPT = "../../agon-hexload/send.py"
 
+# This makes it possible to use files shared between examples in ../lib
+EXTRA_HEADERS +=  $(sort $(call rwildcard,../lib,*.h))
+EXTRA_ASM_SOURCES +=  $(sort $(call rwildcard,../lib,*.asm))
+EXTRA_C_SOURCES +=   $(sort $(call rwildcard,../lib,*.$(C_EXTENSION)))
+EXTRA_CXX_SOURCES += $(sort $(call rwildcard,../lib,*.$(CPP_EXTENSION)))
+
 # ----------------------------
 
 include $(shell cedev-config --makefile)

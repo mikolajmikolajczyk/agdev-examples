@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include "gpio.h"
-
 #include <agon/vdp_vdu.h>
-
-#include "prt.h"
+#include "../../lib/prt.h"
 
 int main(void)
 {

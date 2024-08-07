@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include "gpio.h"
+// gpio.h is moved to lib/ directory as it is used by multiple examples
+#include "../../lib/gpio.h"
 
 void delay_some()
 {
