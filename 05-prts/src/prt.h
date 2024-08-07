@@ -44,9 +44,9 @@ typedef struct
 #define PRT_TIMER_CTL_4 0x8C
 #define PRT_TIMER_CTL_5 0x8F
 
-uint16_t prt_init(uint8_t timer_number, uint16_t initial_reload_value, Prt_TMRx_CTL_t settings);
-void prt_set_enable(uint8_t timer_number, bool enable);
-uint16_t prt_current_reload_value(uint8_t timer_number);
-bool prt_is_enabled(uint8_t timer_number);
+uint16_t prt_init(uint8_t timer_ctl_addr, uint16_t initial_reload_value, Prt_TMRx_CTL_t settings);
+void prt_set_enable(uint8_t timer_ctl_addr, bool enable);
+uint16_t prt_current_reload_value(uint8_t timer_ctl_addr);
+bool prt_is_enabled(uint8_t timer_ctl_addr);
 
 #endif
