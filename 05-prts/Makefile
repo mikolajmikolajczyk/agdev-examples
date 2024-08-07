@@ -2,8 +2,8 @@
 # Makefile Options
 # ----------------------------
 
-NAME = 04-gpio
-DESCRIPTION = "GPIO demo"
+NAME = 05-prts
+DESCRIPTION = "How to use programmable reload timers"
 COMPRESSED = NO
 ARCHIVED = NO
 INIT_LOC = 040000
